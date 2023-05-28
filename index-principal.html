@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style-principal.css" />
+      <link rel="stylesheet" href="css/style-chat.css" />
+    <script src="js/response-chat.js" defer></script>
+    <script src="js/app-chat.js" defer></script>
+    
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <style>
+      .banner-image {
+        background-image: url("https://plus.unsplash.com/premium_photo-1673011778707-f49e5a03ad9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHRhcnRhc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60");
+        background-size: cover;
+      }
+      .banner-image2 {
+        background-color: #1ec9b9;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3"
+      style="z-index: 9999999999999999999999"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="font-family: Montserrat; color: violet; font-size: 40px"
+          >DRAW CAKES
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" style="font-size: 30px" id="home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#acerca"
+                style="font-size: 30px"
+                >Acerca</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#productos"
+                style="font-size: 30px"
+                >Productos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#tradicional" style="font-size: 30px"
+                >Tradicional</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                href="#contacto"
+                style="font-size: 30px"
+                >Contacto</a
+              >
+            </li>
+            <li class="idioma">
+      <button class="idioma-boton"> Idioma</button>
+      <div class="contenido-idioma">
+        <a href="index-principal.html"
+          ><img src="assets/españa.svg" alt="" style="width: 50px; height: 50px" />
+        </a>
+        <a href="index-ingles.html">
+          <img src="assets/reino-unido.svg" alt="" style="width: 50px; height: 50px" />
+        </a>
+      </div>
+          </li>
+            <li>
+             <img src="assets/home blanca.svg" alt="" width="50px" height="50px" style="position: absolute; right: 20px;">
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image  -->
+    <div class="capa-oscura"></div>
+    <div
+      class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="content text-center">
+        <h1 class="text-white">
+          Pastelería Temática <br />
+          DRAW CAKES
+        </h1>
+        <h3 class="text-white">
+          Elaboramos pasteles y tartas de la mejor calidad <br />
+          & con el mejor sabor
+        </h3>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container my-5 d-grid">
+      <div class="p-5 text-center">
+        <p class="sub-content d-flex justify-content-center align-items-center">
+          Cualquier excusa es buena para llevar el símbolo por derecho de
+          nuestra casa. Más de 200 tartas temáticas, con diferentes sabores y
+          con la mejor calidad...... la encontraras inigualable.
+        </p>
+      </div>
+      <div
+        class="p-5 d-flex justify-content-center align-items-md-start w-50"
+        style="position: relative; top: -150px; border: none"
+      >
+        <img src="assets/fondo-acerca.webp" alt="" class="imagen-lateral" />
+        <img
+          src="assets/Especiales/caras.png"
+          class="d-flex justify-content-center align-items-md-start text-white acerca"
+          alt="imagen"
+          style="border-radius: 5px"
+        />
+      </div>
+      <div class="titulo-acerca">
+        <h3 style="font-size: 45px; font-family: Montserrat" id="acerca">
+          Acerca
+        </h3>
+        <p style="font-size: 20px; line-height: 2">
+         <span> Somos Calidad</span>, todos los productos están hechos diariamente en
+          nuestro obrador con la mejor materia prima. <br />
+         <span>Somos Originales </span> ,trabajamos de manera continua para lanzar productos
+          originiales, con sabores diferentes. <br />
+         <span> Somos Servicio</span>, nos encanta llevar nuestros productos a su casa y ver
+          que llega en perfectas condiciones.<br />
+        <span>SOMOS DRAW CAKES </span>  <br />
+          la Magia de hacer sonreir a todos.
+        </p>
+      </div>
+      <hr style="margin-top: 150px; opacity: 0" />
+    </div>
+    <!-- productos aqui--------------------------------- -->
+    <div class="banner-image2 d-flex justify-content-center align-items-center">
+      <div class="content2 text-center">
+        <h2 id="productos" class="productos   animate_animated  animate__hinge">Productos</h2>
+
+        <div class="container-items">
+          <div class="item">
+            <figure>
+              <img src="assets/Harry Potter/harry potter kuidich.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+              <h2>Tartas de Harry Potter</h2>
+              <p class="price">$200</p>
+              <a href="carrito-compra-productos/index-harry.html">
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <figure>
+              <img src="assets/Animes/chihiro.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+              <h2>Tartas de Animes</h2>
+              <p class="price">$120</p>
+              <a href="carrito-compra-productos/animes.html">
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <figure>
+              <img src="assets/Deporte/baloncesto.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+              <h2>Tartas de Deporte</h2>
+              <p class="price">$100</p>
+              <a href="carrito-compra-productos/deporte.html">
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <figure>
+              <img src="assets/Infantil/miniom bebe.png" alt="producto" />
+            </figure>
+            <div class="info-product">
+              <h2>
+                Tartas <br />
+                Infantiles
+              </h2>
+              <p class="price">$90</p>
+              <a href="carrito-compra-productos/infantil.html">
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="assets/Terror/miecoles2.png"
+                alt="producto"
+                width="386.87px"
+                height="300px"
+              />
+            </figure>
+            <div class="info-product">
+              <h2>
+                Tartas de <br />
+                Terror
+              </h2>
+              <p class="price">$180</p>
+              <a href="carrito-compra-productos/terror.html">
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <figure>
+              <img
+                src="assets/Especiales/mujeres musicales.png"
+                alt="producto"
+                width="386.87px"
+                height="300px"
+              />
+            </figure>
+            <div class="info-product">
+              <h2>Tartas Especiales</h2>
+              <p class="price">$250</p>
+              <a href="carrito-compra-productos/especiales.html">
+                <button class="btn-add-cart">Añadir al carrito</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <!-- aqui titulo tartas tradicionales -->
+   <p class="tradicionales">¿Te atreves a probar Nuestras <br>
+  Tartas Tradicionales?</p>
+  <p class="txt-tradicionales">Aqui os dejamos 6 tartas deliciosas de las que no podras resistirte</p>
+
+<!-- modal aqui ------------------------------------------------->
+    <div class="principal" id="tradicional">
+ <div class="header-modal">
+      <p class="txt">
+        Tartas Tradicionales
+      </p>
+    </div>
+
+     <div id="modal" class="modal-p">
+     
+      <article class="articulo1">
+        
+        <a href="#trabajo-1" class="tarjeta">
+            <div class="capa-oscura2"></div>
+        <p class="txt-modulo2">
+          Tartas de Fresa
+        </p>
+        
+          <img
+            class="modulo2"
+            src="tartas/07222520-dc7d-40b1-87f5-c54922416e46.jpg"
+            alt="modulo1" style="width: 100%; height: 290px;"
+          />
+         
+        </a>
+      </article>
+      <article class="articulo1">
+        <a href="#trabajo-2" class="tarjeta">
+           <div class="capa-oscura"></div>
+        <p class="txt-modulo2">Tartas de Chocolate</p>
+        <img class="modulo2" src="tartas/4ca911ad-c4f1-4b07-9713-b118784647ea.jpg" style="width: 100%; height: 290px;" alt="modulo2" />
+         
+        </a>
+      </article> 
+       <article class="articulo1">
+        <a href="#trabajo-3" class="tarjeta">
+        <div class="capa-oscura"></div>
+        <p class="txt-modulo2">
+          Tartas de Queso
+        </p>
+        <img
+          class="modulo2"
+          src="tartas/93223d1a-eae5-4138-b1ef-4beb16e27c44.jpg"
+          alt="modulo3" style="width: 100%; height: 290px;"
+        />
+        
+        </a>
+      </article>
+      <article class="articulo1">
+        <a href="#trabajo-4" class="tarjeta">
+          <div class="capa-oscura"></div>
+        <p class="txt-modulo2">
+          Tartas de Manzana
+          
+        </p>
+        <img
+          class="modulo2"
+          src="tartas/ba5e3ef9-a88b-4d64-9a93-8a9ab34dc123.jpg"
+          alt="modulo3" style="width: 100%; height: 290px;"
+        />
+          
+        </a>
+      </article>
+      <article class="articulo1">
+        <a href="#trabajo-5" class="tarjeta">
+          <div class="capa-oscura"></div>
+        <p class="txt-modulo2">
+          Tartas de Limon
+        </p>
+        <img
+          class="modulo2"
+          src="tartas/c3914f4b-3c8b-4565-b71d-f5467eed4108.jpg"
+          alt="modulo3" style="width: 100%; height: 290px;"
+        />
+          
+        </a>
+      </article>
+      <article class="articulo1">
+        <a href="#trabajo-6" class="tarjeta">
+          <div class="capa-oscura"></div>
+        <p class="txt-modulo2">
+          Tarta de Melocoton
+        </p>
+        <img
+          class="modulo2"
+          src="tartas/4ca911ad-c4f1-4b07-9713-b118784647ea.jpg"
+          alt="modulo3" style="width: 100%; height: 290px;"
+        />
+         
+        </a>
+      </article>
+  </main>
+   <article class="modal" id="trabajo-1">
+      <div class="modal-content2">
+        <a href="#cerrar" class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"
+            />
+          </svg>
+        </a>
+         <div class="modal2">
+    
+      <p class="texto-modal4">
+        Las fresas cada vez llegan antes al mercado pero para mí siguen siendo una fruta que celebra la primavera. Ahora que ya el invierno va quedando atrás nos esperan temperaturas más agradables con días más largos en los que disfrutar de la naturaleza en todo su esplendor. ¿Y si lo celebramos con una buena tarta de fresas?
+      </p>
+      
+    </div>
+    
+      
+    </article>
+ 
+
+    <article class="modal" id="trabajo-2">
+      <div class="modal-content2">
+        <a href="#cerrar" class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"
+            />
+          </svg>
+        </a>
+         <div class="modal2">
+     
+      <p class="texto-modal4">
+      Cuando se trata de elegir postres, la tarta de chocolate figura, sin duda, entre los favoritos de cualquier amante del dulce. Esta tarta de chocolate con base de hojaldre que estás a punto de descubrir es una de las recetas que mejor nos permite apreciar el irresistible sabor y aroma del cacao, una de las grandes aportaciones que el continente americano ha regalado a la gastronomía internacional.
+      </p>
+
+    </div>
+    
+      
+    </article>
+
+    <article class="modal" id="trabajo-3">
+      <div class="modal-content2">
+        <a href="#cerrar" class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"
+            />
+          </svg>
+        </a>
+        <div class="modal2">
+    
+      <p class="texto-modal4">
+        Me imagino que habrá miles de versiones de esta tarta tan fácil pero os aseguro que sale perfecta a la primera. Si te gustan las tartas de queso te va enamorar porque es rápida, fácil de hacer, cremosa y elegante en el paladar. Gustará a todos los que disfrutan con las tartas de queso.
+  
+      </p>
+      
+    </div>
+    </article>
+
+    <article class="modal" id="trabajo-4">
+      <div class="modal-content2">
+        <a href="#cerrar" class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"
+            />
+          </svg>
+        </a>
+       <div class="modal2">
+    
+      <p class="texto-modal4">
+      La tarta de manzana es uno de los postres más fáciles y sabrosos que se pueden preparar utilizando poca cantidad de ingredientes; es una de las elaboraciones más famosas dentro de la repostería, una buena forma de iniciarse en el increíble y maravilloso "mundo de los postres".</p>
+      
+    </div>
+
+        
+      </div>
+    </article>
+      
+    <article class="modal" id="trabajo-5">
+      <div class="modal-content2">
+        <a href="#cerrar" class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"
+            />
+          </svg>
+        </a>
+       <div class="modal2">
+     
+      <p class="texto-modal4">
+      Para superar la morriña cítrica, nada como cocinar y hornear recetas dulces y saladas con estas frutas, como una cremosa tarta de limón de base crujiente, fresca y tremendamente aromática. </p> 
+      
+    </div>
+      </div>
+    </article>
+
+    <article class="modal" id="trabajo-6">
+      <div class="modal-content2">
+        <a href="#cerrar" class="modal-close">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"
+            />
+          </svg>
+        </a>
+
+        
+    <div class="modal2">
+
+      <p class="texto-modal4">
+       Con la llegada del calor lo que más apetecen son postres ligeros, frescos, y si son a base de fruta, mucho mejor. Por eso, las tartas frías de frutas son siempre una de las mejores opciones para disfrutar de un bocado dulce y saludable al terminar la comida.
+         </p>
+     
+
+      
+
+    </div>
+      </div>
+    </article>
+     </div>
+    </div>
+
+    <br><br>
+    
+<!-- carousel ---------------------------------------->
+<section id="slider" class="pt-5">
+  <div class="container">
+    <h3 class="titulo-carousel" style="font-size: 45px;">¿Prueba nuestras tartas de DISNEY?</h3>
+	  <div class="slider">
+				<div class="owl-carousel">
+					<div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="carrito-compra-productos/Disney/bella y bestia.png" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>BELLA & BESTIA</b></h5>
+					
+					</div>
+					<div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="carrito-compra-productos/Disney/blancanieves.png" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>BLANCANIEVES</b></h5>
+					
+					</div>
+          <div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="carrito-compra-productos/Disney/bella y bestia2.png" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>BELLA & BESTIA</b></h5>
+					
+					</div>
+          <div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="carrito-compra-productos/Disney/mulan.png" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>MULAN</b></h5>
+					
+					</div>
+          <div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="carrito-compra-productos/Rock/rock5.jpg" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>ROCK</b></h5>
+					
+					</div>
+          <div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="carrito-compra-productos/Disney/mulan2.png" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>MULAN</b></h5>
+					
+					</div>
+          <div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src="carrito-compra-productos/Disney/rey leon.png" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>REY LEÓN</b></h5>
+					
+					</div>
+				
+         <div class="slider-card" style="border-radius: 10px;">
+						<div class="d-flex justify-content-center align-items-center mb-4">
+							<img src= "carrito-compra-productos/Disney/sirenita.png" alt="" width="500px" height="400px" />
+						</div>
+						<h5 class="mb-0" style="display: flex; justify-content: center;
+            align-items: center; height: 30px;padding-bottom: 15px;"><b>LA SIRENITA</b></h5>
+					
+					</div>
+				</div>
+    </div>
+			</div>
+  </div>
+</section>
+<!-- boton -->
+<a href="#">   
+<button class="round-button"><span class="arrow"></span></button></a>
+
+
+<!-- chatBot ------------------------------------->
+
+ <button id="boton" class="closed">ChatBot</button>
+
+    <div id="content" class="closed">
+      <div class="contenedor-chat">
+        <div class="chat-header">
+          <div class="title">DRAW CAKES</div>
+        </div>
+        <div class="chat-body"></div>
+        <div class="chat-input">
+          <div class="boton2">
+            <input type="text" id="txtInput" placeholder="Escriba un Mensaje" autofocus />
+          </div>
+          <div class="send">
+            <img src="images/send.svg" alt="send" style="width: 50px;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+<!-- contacto ------------------------------------>
+<h2 class="contacto-titulo">¿Quieres más información?</h2>
+<p class="contacto-subt">No dudes en llamarnos</p>
+<div class="contacto">
+<a href="contacto/index-contacto.html"> <button id="contacto" class="ola">CONTACTO</button></a>
+</div>  
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.280339761306!2d-4.471675800000001!3d36.71582790000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f748fad6fbf9%3A0xf35c26482f17c90!2zSmFyZMOtbiBCb3TDoW5pY28!5e0!3m2!1ses!2ses!4v1683903442642!5m2!1ses!2ses" width="100%" height="450" style="border:0; position: relative; bottom: 0; margin-top: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<footer>
+  <p class="footer-p">Sitio Diseñado por Virginia Martín Rodriguez</p>
+</footer>
+
+<!-- script --------------------------------------------------->
+<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var toggleButton = document.getElementById("boton");
+        var content = document.getElementById("content");
+
+        toggleButton.addEventListener("click", function () {
+          if (toggleButton.classList.contains("closed")) {
+            toggleButton.classList.remove("closed");
+            toggleButton.innerText = "Cerrar";
+            content.style.display = "block";
+          } else {
+            toggleButton.classList.add("closed");
+            toggleButton.innerText = "ChatBot";
+            content.style.display = "none";
+          }
+        });
+      });
+    </script>
+ 
+
+
+
+
+
+<!-- chatbot -->
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+
+  </body>
+</html>

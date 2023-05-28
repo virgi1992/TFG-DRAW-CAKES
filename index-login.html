@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style-login.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="box">
+      <div>
+        <img
+          src="assets/login-abuelo.png"
+          alt=""
+          style="width: 150px; height: auto; margin-right: 50px"
+        />
+      </div>
+      <div class="container">
+        <div class="top">
+          <span>Tienes una cuenta?</span>
+          <header>Login</header>
+        </div>
+
+        <div class="input-field">
+          <input
+            type="text"
+            class="input"
+            placeholder="Username"
+            id="usuario"
+          />
+          <i class="bx bx-user"></i>
+        </div>
+
+        <div class="input-field">
+          <input
+            type="Password"
+            class="input"
+            placeholder="Password"
+            id="contraseña"
+          />
+          <i class="bx bx-lock-alt"></i>
+        </div>
+
+        <div class="input-field">
+          <input
+            type="submit"
+            class="submit"
+            value="Iniciar sesión"
+            id="boton"
+            onclick="login()"
+          />
+        </div>
+
+        <div class="two-col">
+          <div class="one">
+            <input type="checkbox" name="" id="check" />
+            <label for="check"> Remember Me</label>
+          </div>
+          <div class="two">
+            <label><a href="#">Forgot password?</a></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="
+        background-color: white;
+        color: black;
+        width: 230px;
+        height: 80px;
+        padding-left: 26px;
+        top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      "
+    >
+      <p style="color: black; display: flex; flex-direction: row">
+        Usuario: usuario
+      </p>
+      <p>Contraseña: 123456</p>
+    </div>
+    <script src="js/script-principal.js"></script>
+  </body>
+</html>

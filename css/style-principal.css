@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  box-sizing: border-box;
+}
+.capa-oscura {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  margin: 0;
+  position: absolute;
+  z-index: 99;
+}
+.content {
+  z-index: 99999;
+  font-weight: 600;
+}
+h3 {
+  margin-top: 30px;
+}
+h1 {
+  font-size: 50px;
+}
+h3:hover {
+  font-weight: 900;
+}
+h1:hover {
+  font-weight: 900;
+  color: violet;
+}
+.sub-content {
+  background-color: violet;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top: -200px;
+  z-index: 9999999;
+  padding: 20px;
+  border-radius: 5px;
+}
+.acerca {
+  width: 400px;
+  height: 416px;
+  position: absolute;
+  top: 345px;
+  left: 261px;
+}
+.imagen-lateral {
+  width: 500px;
+  height: 470px;
+  position: relative;
+  left: -125px;
+  top: -72px;
+  border-radius: 5px;
+}
+.titulo-acerca {
+  width: 600px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/Disney/img-fondo.jfif);
+  background-size: cover;
+  position: absolute;
+  right: 50px;
+  flex-direction: column;
+
+  padding: 27px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+span {
+  -webkit-text-stroke: 0.6px violet;
+}
+/* parte de productos -----------------------*/
+.productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  font-size: 45px;
+  font-family: Montserrat;
+  margin-bottom: 40px;
+  color: white;
+  font-weight: 400;
+}
+.productos:hover {
+  font-weight: 900;
+  color: #031654;
+}
+.container-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.item {
+  border-radius: 10px;
+  background-color: rgb(238, 233, 233);
+  width: 335px;
+  height: auto;
+}
+
+.item:hover {
+  box-shadow: 0 10px 20px white;
+}
+
+.item img {
+  width: 100%;
+  height: 300px;
+
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+
+.item figure {
+  overflow: hidden;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.info-product {
+  padding: 15px 30px;
+  /* line-height: 2; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  border-radius: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button {
+  border: none;
+  background: none;
+  background-color: #031654;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/* modal------------------------------------------------ */
+.principal {
+  font-family: Montserrat;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-modal {
+  width: 70%;
+  height: 100px;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.modal-p {
+  max-width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.articulo1 {
+  width: 33.33%;
+  height: auto;
+  margin: 0;
+  position: relative;
+  background-size: cover;
+  padding: 0;
+}
+
+.modulo2 {
+  width: 250px;
+  height: 180px;
+  position: relative;
+}
+.txt-modulo2 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+}
+
+.txt-modulo2:hover {
+  color: violet;
+}
+
+.capa-oscura2 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  margin: 0;
+  position: absolute;
+  z-index: 9;
+}
+
+/* -----------------parte-modal-ventana que abre------------------------------- */
+.modal {
+  position: fixed;
+  z-index: 999999999999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+
+.modal-content2 {
+  position: relative;
+  width: 587;
+  height: 265px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  z-index: 999999999999999999999999999999999;
+}
+
+.modal-close svg {
+  width: 3rem;
+  height: 3rem;
+  fill: black;
+}
+
+.modal[id|="trabajo"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tarjeta {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjeta:hover .tarjeta-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tarjeta-modal {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal2 {
+  width: 533px;
+  height: 351px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: #11b7b7 0px 13px 27px -5px, #11b7b7 0px 8px 16px -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999999;
+}
+
+/* modal4 --------------------------------*/
+
+.texto-modal4 {
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  font-family: Poppins;
+  color: black;
+  display: flex;
+  justify-content: center;
+  /* font-weight: bold; */
+  z-index: 9999;
+  flex-direction: row;
+  margin-right: 15px;
+  font-weight: 700;
+  padding: 30px;
+}
+.modal2 img {
+  margin-top: 20px;
+  width: 446px;
+  height: 265px;
+}
+/* tartas tradicionales-------------------------------------------- */
+
+.tradicionales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  font-size: 45px;
+  font-family: Montserrat;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.txt-tradicionales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  width: 100%;
+  height: 100px;
+}
+
+/* aqui el efecto hover */
+
+.ola {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 100px;
+  background: white;
+  border-radius: 75px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  text-decoration: none;
+}
+
+.ola:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ola:hover::before,
+.ola:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  background: #fda8cf;
+  border-radius: 55px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+  text-decoration: none;
+}
+
+.ola:hover:after {
+  background: #f3ce5e;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
+}
+/* aqui el contacto-------------------------------------------- */
+.contacto-titulo {
+  font-size: 50px;
+  margin-top: 100px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacto-subt {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-p {
+  color: white;
+  font-size: 30px;
+  font-family: Montserrat;
+}
+/* carrusel -----------------------*/
+.round-button {
+  position: fixed;
+  bottom: 20px;
+  right: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid violet;
+  cursor: pointer;
+  z-index: 9999999999999999;
+}
+
+.arrow {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 20px auto;
+  border-top: 4px solid #000;
+  border-right: 4px solid #000;
+  transform: rotate(-45deg);
+  border-color: rgb(100, 5, 100);
+}
+/* idiomas desplegables ------------------------------------------*/
+.idioma {
+  position: relative;
+  display: inline-block;
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  font-family: Montserrat;
+  width: 80px;
+}
+.idioma-boton {
+  font-size: 30px;
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: Montserrat;
+  height: 60px;
+  left: 10px;
+}
+
+.contenido-idioma {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  top: 50px;
+  z-index: 1;
+  left: 30px;
+}
+
+.contenido-idioma a {
+  color: black;
+  margin: 0px;
+  text-decoration: none;
+  display: block;
+}
+
+.idioma:hover .contenido-idioma {
+  display: block;
+}
